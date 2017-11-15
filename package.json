@@ -1,12 +1,20 @@
 {
   "name": "gatsby-starter-default",
   "description": "Gatsby default starter",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
     "gatsby": "^1.9.110",
     "gatsby-link": "^1.6.27",
-    "gatsby-plugin-react-helmet": "^1.0.8"
+    "gatsby-plugin-google-tagmanager": "^1.0.8",
+    "gatsby-plugin-offline": "^1.0.10",
+    "gatsby-plugin-react-helmet": "^1.0.8",
+    "gatsby-plugin-sass": "^1.0.13",
+    "gatsby-plugin-sitemap": "^1.2.5",
+    "gatsby-source-filesystem": "^1.5.8",
+    "gatsby-transformer-remark": "^1.7.21",
+    "semantic-ui-css": "^2.2.12",
+    "semantic-ui-react": "^0.76.0"
   },
   "keywords": [
     "gatsby"
