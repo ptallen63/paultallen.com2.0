@@ -11,3 +11,7 @@ const IndexPage = () => (
 )
 
 export default IndexPage
+
+
+//TODO: Set up Gatsby-node.js
+//TODO: Set up home page
