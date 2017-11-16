@@ -1,0 +1,35 @@
+.mainContainer {
+    padding-top: 15%;
+    min-height: 100%;
+}
+
+.divider {
+    padding: 20px;
+}
+
+.keyWords {
+    margin-top: -5px !important;
+    margin-bottom: 55px !important;
+}
+
+.Site {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.Site-content {
+    flex: 1;
+}
+
+.front-page-icon {
+    padding: 5px !important;
+    border-bottom: 1px solid;
+    border-color: #fff !important;
+}
+
+.front-page-icon:hover {
+    border-bottom: 1px solid;
+    border-color: #2980b9 !important;
+    /* background-color: #f6f9fa; */
+}

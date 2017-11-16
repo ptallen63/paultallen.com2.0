@@ -1,0 +1,98 @@
+/*
+=========================
+ ProjectsPage 
+ ========================
+ */
+
+.projects {
+    background-color: #fff;
+    padding-top: 20px;
+}
+
+.banner {
+    height: 50vh;
+    width: 100vw;
+    background-color: #2980b9 !important;
+    background-image: url("https://s3-us-west-2.amazonaws.com/paultallen.com/PTA.com+Project+Hero.png") !important;
+    background-attachment: fixed !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+}
+
+.banner-text {
+    color: #fff;
+    background-color: rgba(67, 95, 138, 0.75);
+}
+
+.project-page-header {
+    font-size: 68px !important;
+    padding-top: 150px !important;
+    color: #fff;
+}
+
+
+/*
+=========================
+ ProjectsPage 
+ ========================
+ */
+
+.project {
+    margin: 0px;
+    padding: 0 !important;
+    -webkit-box-shadow: 1px 5px 5px #ccc !important;
+    -moz-box-shadow: 1px 5px 5px #ccc !important;
+    box-shadow: 1px 5px 5px #ccc !important;
+}
+
+.project:hover {
+    -webkit-box-shadow: 5px 5px 5px #666 !important;
+    /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+    -moz-box-shadow: 5px 5px 5px #666 !important;
+    /* Firefox 3.5 - 3.6 */
+    box-shadow: 5px 5px 5px #666 !important;
+    /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+}
+
+.project-header {
+    background-color: #34495e
+}
+
+.project-modal {
+    padding: 0 !important;
+}
+
+.project-image {
+    width: 100%
+}
+
+.project-body {
+    padding: 20px;
+}
+
+.project-view {
+    position: fixed
+}
+
+
+/*
+++=======================
+ Project Page 
+ ========================
+ */
+
+.modal-content {
+    padding-top: 20px;
+    padding-bottom: 50px;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+.modal-screenshot {
+    padding: 2px !important;
+    margin: 0 !important;
+}
+
+
+/* TODO: Make Project Cards stretch across the row */

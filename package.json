@@ -13,6 +13,7 @@
     "gatsby-plugin-sitemap": "^1.2.5",
     "gatsby-source-filesystem": "^1.5.8",
     "gatsby-transformer-remark": "^1.7.21",
+    "moment": "^2.19.2",
     "semantic-ui-css": "^2.2.12",
     "semantic-ui-react": "^0.76.0"
   },
@@ -25,9 +26,10 @@
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"src/**/*.js\"",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "devDependencies": {
+    "jest": "^21.2.1",
     "prettier": "^1.8.2"
   }
 }
