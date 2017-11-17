@@ -77,6 +77,7 @@ const IndexPage = () => (<div>
                     </Link>
                   </Grid.Column>
                   <Grid.Column>
+                    <Link to="contact">
                     <Statistic 
                     // onClick={this.open} 
                     className="front-page-icon">
@@ -85,6 +86,7 @@ const IndexPage = () => (<div>
                       </Statistic.Value>
                       <Statistic.Label>Contact Me</Statistic.Label>
                     </Statistic>
+                    </Link>
                   </Grid.Column>
                 </Grid>
               </Grid.Column>

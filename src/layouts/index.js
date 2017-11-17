@@ -9,10 +9,11 @@ import "semantic-ui-css/semantic.min.css";
 import Footer from '../components/Footer';
 
 //TODO: Add header
+//TODO: adjust site meta data
 const TemplateWrapper = ({ children }) => (
   <div>
     <Helmet
-      title="Gatsby Default Starter"
+      title="Paultallen.com"
       meta={[
         { name: 'description', content: 'Sample' },
         { name: 'keywords', content: 'sample, something' },

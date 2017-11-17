@@ -36,7 +36,11 @@ const  Navbar = (props) => {
                   Resume
                 </Link>
               </Menu.Item>
-              <Menu.Item className="menu-item" name="Contact" />
+              <Menu.Item className="menu-item" name="Contact" active={activeItem === "/contact"}>
+                <Link className="link" to="/contact">
+                  Contact
+                </Link>
+              </Menu.Item>
             </Menu.Menu>
           </Menu>
         </div>
