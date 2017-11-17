@@ -15,24 +15,35 @@ const TemplateWrapper = ({ children }) => (
     <Helmet
       title="Paultallen.com"
       meta={[
-        { name: 'description', content: 'Sample' },
-        { name: 'keywords', content: 'sample, something' },
+        {
+          name: "description",
+          content:
+            "The personal site for Paul T. Allen III of Columbia, SC. I am a developer, technologist, and strategist."
+        },
+        {
+          name: "author",
+          conent: "Paul Allen"
+        },
+        {
+          name: "keywords",
+          content:
+            "Paul Allen, Developer, Technologist, CRM, Salesforce, Higher Education"
+        }
       ]}
     />
     {/* <Header /> */}
     <div
       style={{
-        margin: '0 auto',
-        
-        
-        paddingTop: 0,
+        margin: "0 auto",
+
+        paddingTop: 0
       }}
     >
       {children()}
     </div>
-    <Footer/>
+    <Footer />
   </div>
-)
+);
 
 TemplateWrapper.propTypes = {
   children: PropTypes.func,
