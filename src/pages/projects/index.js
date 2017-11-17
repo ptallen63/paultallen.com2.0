@@ -8,9 +8,9 @@ import Navbar from "../../components/Navbar";
 import "../../styles/projects.scss";
 import Project from "../../components/Project";
 
-const ProjectsPage = ({data}) => {
-
-    const { edges } = data.allMarkdownRemark
+const ProjectsPage = (props) => {
+    
+    const { edges } = props.data.allMarkdownRemark
     const projects = edges.map(({node})=>{
         return <Project
                   index={node.id}
@@ -23,7 +23,7 @@ const ProjectsPage = ({data}) => {
      
      <div>
         <Container>
-          <Navbar />
+          <Navbar {...props} />
         </Container>
         <Segment vertical className="banner">
           <Header className="project-page-header" as="h1" textAlign="center">
@@ -70,3 +70,4 @@ export const projectQuery = graphql`
     }`
 
 // TODO: Set up Project Test File
+//TODO: make project boxes even. 

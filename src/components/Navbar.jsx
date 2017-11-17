@@ -6,23 +6,12 @@ import '../styles/navbar.scss';
 const style = {
   borderColor: "blue"
 };
+
+// RegExp for the Project route
+const regex = new RegExp("/(project/).*");
+
 const  Navbar = (props) => {
-  
-
-//   const handleItemClick = (path) => props.router.push(path);
-//TODO: Handing Routing  
-
-
-
-  
-   const { location } = props;
-   let pathname = "/";
-   if (location) {
-     pathname = location.pathname;
-   }
-   const activeItem = pathname;
-
-
+   const activeItem = props.location.pathname;
     return <div>
         <div style={{ marginBottom: "40px" }}>
           <Menu fixed="top" secondary style={{ padding: "0px !important", height: "50px", borderColor: "#fff", backgroundColor: "#fff" }}>
@@ -32,7 +21,7 @@ const  Navbar = (props) => {
                   Home
                 </Link>
               </Menu.Item>
-              <Menu.Item className="menu-item" name="projects" active={activeItem === "/projects"}>
+              <Menu.Item className="menu-item" name="projects" active={regex.test(activeItem) || activeItem === "/projects"}>
                 <Link className="link" to="/projects">
                   Projects
                 </Link>

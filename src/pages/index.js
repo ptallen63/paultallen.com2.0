@@ -109,5 +109,5 @@ export default IndexPage
 //TODO: Contact Formt
 
 //TODO: Add Favicon
-
+//TODO: Center Icons on page
 

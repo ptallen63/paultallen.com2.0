@@ -16,6 +16,7 @@ url: 'http://ez.gradecalculate.com'
 type: 'Webapp'
 cover: 'https://s3.amazonaws.com/gradecalculate/images/Screen+Shot+2017-11-07+at+10.54.42+AM.png'
 frontImage: 'https://s3.amazonaws.com/gradecalculate/images/GradeCalCulate+(1).png'
+show: true
 ---
 
 ## Description

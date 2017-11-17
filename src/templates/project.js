@@ -19,13 +19,15 @@ var settings = {
   lazyLoad: true,
 };
 
-export default function Template({ data }) {
-  const { markdownRemark: project } = data; //same as const post = data.markdownRemark
+export default function Template(props) {
+  const { markdownRemark: project } = props.data; //same as const post = data.markdownRemark
 
   const images = project.frontmatter.images.map( (image, i) => <div key={i}><Image className='screenshot' centered src={image}/></div>);
+  const tags = project.frontmatter.tags.map((tag, i) => <Label tag size="mini" key={i}> {tag} </Label>);
+
   return <div>
       <Helmet title={`${project.frontmatter.title} | GradeCalculate.com`} />
-      <Navbar />
+      <Navbar {...props} />
 
       <div className="hero-image">
         <Slider {...settings}>{images}</Slider>
@@ -48,6 +50,7 @@ export default function Template({ data }) {
             </Label>
           </Header.Subheader>
         </Header>
+          <Header>{tags}</Header>
 
         <div dangerouslySetInnerHTML={{ __html: project.html }} />
       </Container>
