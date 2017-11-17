@@ -10,3 +10,17 @@
     background-color: rgba(34, 36, 38, .1);
     color: #000;
 }
+
+.active {
+    background-color: #fff !important;
+    padding: 0px !important;
+}
+
+.active .link {
+    background-color: rgba(34, 36, 38, .1) !important;
+    color: #000 important;
+}
+
+.menu-item {
+    padding: 0 !important;
+}

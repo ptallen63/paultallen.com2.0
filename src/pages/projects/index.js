@@ -1,5 +1,6 @@
 import React from "react";
 import { Container, Header, Segment, Grid } from "semantic-ui-react";
+import Link from 'gatsby-link';
 import find from "lodash/find";
 
 import Navbar from "../../components/Navbar";

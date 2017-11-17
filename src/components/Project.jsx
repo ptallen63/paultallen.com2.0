@@ -7,12 +7,13 @@ import {
   Label,
   Segment
 } from "semantic-ui-react";
+import Link from 'gatsby-link';
 import moment from "moment";
 
 import { getTypeData } from "../utils/helpers";
 
 const Project = props => {
-  const { project } = props;
+  const { project,path } = props;
   const tags = [];
   project.frontmatter.tags.map((tag, i) =>
     tags.push(
@@ -23,6 +24,7 @@ const Project = props => {
   );
 
   return <Grid.Column largeScreen={5} tablet={8} mobile={8}>
+      <Link to={project.frontmatter.path}>
       <Segment className="project" key={props.id}>
         <Image fluid label={{ color: getTypeData(project.frontmatter.type).color, content: project.frontmatter.type, icon: getTypeData(project.frontmatter.type).icon, ribbon: true }} className="project-image" centered src={project.frontmatter.frontImage} />
 
@@ -43,6 +45,7 @@ const Project = props => {
           </Container>
         </div>
       </Segment>
+      </Link>
     </Grid.Column>;
 };
 

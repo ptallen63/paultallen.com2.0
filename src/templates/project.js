@@ -1,29 +1,57 @@
 import React from "react";
 import Helmet from "react-helmet";
 import moment from "moment";
-import { Container, Image, Header } from "semantic-ui-react";
+import { Container, Image, Header, Label, Icon, Button } from "semantic-ui-react";
+import Slider from 'react-slick';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import Navbar from '../components/Navbar';
+import '../styles/projectTemplate.scss';
+import {getTypeData, getStatusColor} from '../utils/helpers';
+
+var settings = {
+  infinite: true,
+  speed: 500,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  dots: true,
+  centerMode: true,
+  lazyLoad: true,
+};
 
 export default function Template({ data }) {
   const { markdownRemark: project } = data; //same as const post = data.markdownRemark
 
-  return (
-    <div>
+  const images = project.frontmatter.images.map( (image, i) => <div key={i}><Image className='screenshot' centered src={image}/></div>);
+  return <div>
       <Helmet title={`${project.frontmatter.title} | GradeCalculate.com`} />
-      <Navbar/>
-      <Container>
-        <Image centered src={project.frontmatter.cover} />
+      <Navbar />
+
+      <div className="hero-image">
+        <Slider {...settings}>{images}</Slider>
+      </div>
+      <Container className="container">
         <Header as="h1">
           {project.frontmatter.title}
+          <a href={project.frontmatter.url} className="site-link">
+            {" "}
+            <Icon name="arrow circle right" />
+          </a>
           <Header.Subheader>
             {moment(project.frontmatter.date).format("MMM Do YYYY")}
+            <Label size="mini" color={getTypeData(project.frontmatter.type).color}>
+              <Icon name={getTypeData(project.frontmatter.type).icon} />
+              {project.frontmatter.type}
+            </Label>
+            <Label size="mini" color={getStatusColor(project.frontmatter.status)}>
+              {project.frontmatter.status}
+            </Label>
           </Header.Subheader>
         </Header>
 
         <div dangerouslySetInnerHTML={{ __html: project.html }} />
       </Container>
-    </div>
-  );
+    </div>;
 }
 
 export const projectQuery = graphql`query ProjectPostByPath($path: String!) {
@@ -41,6 +69,7 @@ export const projectQuery = graphql`query ProjectPostByPath($path: String!) {
                images
                tags
                url
+               status
              }
            }
          }`;
