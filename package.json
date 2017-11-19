@@ -30,9 +30,11 @@
   "main": "n/a",
   "scripts": {
     "build": "gatsby build",
+    "heroku-postbuild": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"src/**/*.js\"",
-    "test": "jest & eslint"
+    "test": "jest & eslint",
+    "start": "gatsby serve"
   },
   "devDependencies": {
     "eslint": "^4.11.0",
