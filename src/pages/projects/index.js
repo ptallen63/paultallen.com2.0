@@ -25,7 +25,7 @@ const ProjectsPage = (props) => {
        
           <Navbar {...props} />
         
-        <div vertical className="banner">
+        <div className="banner">
           <Header className="project-page-header" as="h1" textAlign="center">
             <span className="banner-text">Projects</span>
           </Header>

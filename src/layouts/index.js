@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import Link from 'gatsby-link';
 import Helmet from 'react-helmet';
 
-import './index.css'
+// import './index.css'
 import "semantic-ui-css/semantic.min.css";
 import favicon from '../images/favicon.ico';
 import Footer from '../components/Footer';
@@ -35,9 +35,7 @@ const TemplateWrapper = ({ children }) => (
     </Helmet>
     <div
       style={{
-        margin: "0 auto",
-
-        paddingTop: 0
+        
       }}
     >
       {children()}

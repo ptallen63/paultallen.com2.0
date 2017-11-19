@@ -10,17 +10,17 @@
 }
 
 .banner {
-    height: 50vh !important;
-    width: 100vw !important;
+    height: 50vh ;
+    width: 100vw ;
     background-color: #2980b9 !important;
-    background-image: url("https://s3-us-west-2.amazonaws.com/paultallen.com/PTA.com+Project+Hero.png");
+    background-image: url("https://s3-us-west-2.amazonaws.com/paultallen.com/PTA.com+Project+Hero.png") !important;
     background-attachment: fixed !important;
     background-position: center !important;
     background-repeat: no-repeat !important;
     background-size: cover !important;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
+    -webkit-background-size: cover !important;
+    -moz-background-size: cover !important;
+    -o-background-size: cover !important;
 
    
 }
