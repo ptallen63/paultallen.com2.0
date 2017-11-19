@@ -1,8 +1,11 @@
 import React from 'react'
 import {Container} from 'semantic-ui-react';
+import Navbar from '../components/Navbar';
 
-const NotFoundPage = () => (
-  <Container>
+const NotFoundPage = (props) => (
+  <div>
+    <Navbar {...props}/>
+  <Container textAlign='center'>
     <h1>NOT FOUND</h1>
     <div>
       <h1>404: Yikes! Might want to back up.</h1>
@@ -13,7 +16,7 @@ const NotFoundPage = () => (
         frameBorder="0"
         className="giphy-embed"
         allowFullScreen
-      />
+        />
       <p>
         <a href="https://giphy.com/gifs/cat-fail-ryn10EFwFk2ME">via GIPHY</a>
       </p>
@@ -21,6 +24,7 @@ const NotFoundPage = () => (
     </div>
     
   </Container>
+        </div>
 );
 
 export default NotFoundPage
