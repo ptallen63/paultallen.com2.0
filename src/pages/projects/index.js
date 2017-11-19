@@ -22,14 +22,14 @@ const ProjectsPage = (props) => {
     });
     return <div>
         <Helmet title="Projects | Paultallen.com" />
-        <Container>
+       
           <Navbar {...props} />
-        </Container>
-        <Segment vertical className="banner">
+        
+        <div vertical className="banner">
           <Header className="project-page-header" as="h1" textAlign="center">
             <span className="banner-text">Projects</span>
           </Header>
-        </Segment>
+        </div>
         <div className="projects">
           <Container>
             <Grid stackable stretched centered>

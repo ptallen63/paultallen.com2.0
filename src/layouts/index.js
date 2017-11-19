@@ -5,7 +5,7 @@ import Helmet from 'react-helmet';
 
 import './index.css'
 import "semantic-ui-css/semantic.min.css";
-
+import favicon from '../images/favicon.ico';
 import Footer from '../components/Footer';
 
 
