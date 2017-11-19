@@ -1,4 +1,4 @@
-const workItems = [
+const workitems = [
   {
     company: 'University of South Carolina',
     location: 'Columbia, SC',
@@ -99,4 +99,4 @@ const workItems = [
 ]
 
 
-export default workItems;
+export default workitems;
