@@ -15,7 +15,7 @@ import {
 } from "semantic-ui-react";
 import {getTypeData} from '../utils/helpers';
 
-import workItems from "../data/workItems";
+import workItems from "../data/workItems.js";
 
 
 const  ResumePage = (props) => {
