@@ -20,12 +20,11 @@ I am constantly using this site as a testing ground. It tends to be in an eterna
 
 - [x] ~~Add Project section~~
 - [x] ~~Project Screenshots Carousel~~
+- [x] ~~Rewrite to be static site using GatsbyJS or NextJS~~
 - [ ] Optimize Images --> CDN or Cloundanary
 - [ ] Build out testing Suite
-- [ ] Mobile colapsed menu
-- [x] ~~Rewrite to be static site using GatsbyJS or NextJS~~
+- [ ] Connect CI (Probably Travis)
 
 # Exploring
 
 - [ ] connecting a 3rd party DB to store resume data
-- [ ] 

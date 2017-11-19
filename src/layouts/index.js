@@ -30,7 +30,9 @@ const TemplateWrapper = ({ children }) => (
             "Paul Allen, Developer, Technologist, CRM, Salesforce, Higher Education"
         }
       ]}
-    />
+    >
+      <link rel="shortcut icon" href={favicon} />
+    </Helmet>
     <div
       style={{
         margin: "0 auto",

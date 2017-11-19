@@ -67,4 +67,4 @@ export const projectQuery = graphql`
     }`
 
 // TODO: Set up Project Test File
-
+// TODO: Set up paralaxx scrolling
