@@ -22,7 +22,7 @@ var settings = {
 };
 
 export default function Template(props) {
-  const { markdownRemark: project } = props.data; //same as const post = data.markdownRemark
+  const { markdownRemark: project } = props.data; 
 
   const images = project.frontmatter.images.map( (image, i) => <div key={i}><Image className='screenshot' centered src={image}/></div>);
   const tags = project.frontmatter.tags.map((tag, i) => <Label tag size="mini" key={i}> {tag} </Label>);
