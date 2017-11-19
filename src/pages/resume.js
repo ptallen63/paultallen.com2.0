@@ -88,9 +88,11 @@ const  ResumePage = (props) => {
             </Header>
           </Container>
 
-          <Container text>
+          <Container text style={{paddingTop:'30px'}}>
             <Grid columns={3} centered>
-              <Grid.Column>
+             
+
+              <Grid.Column textAlign='center'>
                 <Statistic>
                   <Statistic.Value>10+</Statistic.Value>
                   <Statistic.Label>
@@ -98,7 +100,7 @@ const  ResumePage = (props) => {
                   </Statistic.Label>
                 </Statistic>
               </Grid.Column>
-              <Grid.Column>
+              <Grid.Column textAlign='centered'>
                 <Statistic>
                   <Statistic.Value>5+</Statistic.Value>
                   <Statistic.Label>
@@ -106,7 +108,7 @@ const  ResumePage = (props) => {
                   </Statistic.Label>
                 </Statistic>
               </Grid.Column>
-              <Grid.Column>
+              <Grid.Column textAlign='centered'>
                 <Statistic>
                   <Statistic.Value>3</Statistic.Value>
                   <Statistic.Label>
@@ -114,6 +116,7 @@ const  ResumePage = (props) => {
                   </Statistic.Label>
                 </Statistic>
               </Grid.Column>
+           
             </Grid>
 
             <Segment>
