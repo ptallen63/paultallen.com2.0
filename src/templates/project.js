@@ -18,6 +18,7 @@ var settings = {
   dots: true,
   centerMode: true,
   lazyLoad: true,
+  autoplay:true,
 };
 
 export default function Template(props) {
