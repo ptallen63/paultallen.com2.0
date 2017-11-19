@@ -1,4 +1,5 @@
 import React from "react";
+import Helmet from 'react-helmet';
 import { Container, Header, Segment, Grid } from "semantic-ui-react";
 import Link from 'gatsby-link';
 import find from "lodash/find";
@@ -19,9 +20,8 @@ const ProjectsPage = (props) => {
                 />
         
     });
-    return (
-     
-     <div>
+    return <div>
+        <Helmet title="Projects | Paultallen.com" />
         <Container>
           <Navbar {...props} />
         </Container>
@@ -32,15 +32,12 @@ const ProjectsPage = (props) => {
         </Segment>
         <div className="projects">
           <Container>
-            <Grid stackable stretched>
-             {projects}
+            <Grid stackable stretched centered>
+         {projects}
             </Grid>
           </Container>
         </div>
-
-        
-      </div>
-    );
+      </div>;
 }
 
 export default ProjectsPage;
@@ -70,4 +67,4 @@ export const projectQuery = graphql`
     }`
 
 // TODO: Set up Project Test File
-//TODO: make project boxes even. 
+

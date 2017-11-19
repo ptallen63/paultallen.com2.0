@@ -1,11 +1,13 @@
-import React from 'react'
-import Link from 'gatsby-link'
+import React from 'react';
+import Helmet from 'react-helmet';
+import Link from 'gatsby-link';
 import { Button, Icon, Grid, Image,Container, Header, Statistic } from 'semantic-ui-react';
 
 import '../styles/index.scss';
 const IndexPage = () => (
   <div>
-    {/* TODO: Add React Helmet */}
+   
+    <Helmet title='Paultallen.com'/>
     <div className="mainContainer">
       <Container textAlign="center">
         <Grid reversed="mobile" columns={2} stackable centered>
@@ -48,22 +50,22 @@ const IndexPage = () => (
             <div className="divider" />
             <Grid columns={4} stackable centered>
               <Grid.Column textAlign="center">
-                <Link to="about">
-                  <Statistic className="front-page-icon">
-                    <Statistic.Value>
-                      <Icon name="info" />
-                    </Statistic.Value>
-                    <Statistic.Label>About Me</Statistic.Label>
-                  </Statistic>
-                </Link>
-              </Grid.Column>
-              <Grid.Column textAlign="center">
                 <Link to="projects">
                   <Statistic className="front-page-icon">
                     <Statistic.Value>
                       <Icon name="code" />
                     </Statistic.Value>
                     <Statistic.Label>Projects</Statistic.Label>
+                  </Statistic>
+                </Link>
+              </Grid.Column>
+              <Grid.Column textAlign="center">
+                <Link to="about">
+                  <Statistic className="front-page-icon">
+                    <Statistic.Value>
+                      <Icon name="info" />
+                    </Statistic.Value>
+                    <Statistic.Label>About Me</Statistic.Label>
                   </Statistic>
                 </Link>
               </Grid.Column>
@@ -105,7 +107,6 @@ const IndexPage = () => (
       </Container>
     </div>
 
-    {/* <ContactForm showContactForm={this.state.contactForm} closeContactForm={this.close} /> */}
   </div>
 );
 
@@ -113,11 +114,5 @@ const IndexPage = () => (
 export default IndexPage
 
 
-//TODO: Set up Gatsby-node.js
-//TODO: Set up home page
-
-//TODO: Contact Formt
-
-//TODO: Add Favicon
-//TODO: Center Icons on page
+//TODO: Put images behind CDN
 

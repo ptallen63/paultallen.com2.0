@@ -1,5 +1,6 @@
 import React from "react";
 import Helmet from "react-helmet";
+import Link from 'gatsby-link';
 import moment from "moment";
 import { Container, Image, Header, Label, Icon, Button } from "semantic-ui-react";
 import Slider from 'react-slick';
@@ -32,7 +33,8 @@ export default function Template(props) {
       <div className="hero-image">
         <Slider {...settings}>{images}</Slider>
       </div>
-      <Container className="container">
+      <Container className="main-content">
+        <Link to='/projects'> <Icon name='arrow circle left'/>back to projects</Link>
         <Header as="h1">
           {project.frontmatter.title}
           <a href={project.frontmatter.url} className="site-link">

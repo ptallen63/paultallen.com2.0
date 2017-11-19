@@ -13,7 +13,7 @@ const regex = new RegExp("/(project/).*");
 const  Navbar = (props) => {
    const activeItem = props.location.pathname;
     return <div>
-        <div style={{ marginBottom: "40px" }}>
+        <div style={{ marginBottom: "50px" }}>
           <Menu fixed="top" secondary style={{ padding: "0px !important", height: "50px", borderColor: "#fff", backgroundColor: "#fff" }}>
             <Menu.Menu position="right" style={{ backgroundColor: "#fff", marginRight: "50px" }}>
               <Menu.Item className="menu-item" name="home" active={activeItem === "/"}>
@@ -57,4 +57,3 @@ Navbar.propTypes = {};
 
 export default Navbar;
 
-// TODO: make mobile menu

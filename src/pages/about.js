@@ -9,10 +9,10 @@ const buttonGroup = {
 const AboutPage = (props) =>  (
       <div>
         <Helmet title='About | Paultallen.com' />
-        {/* TODO: Add Meta Data */}
-        <Container>
+       
+     
           <Navbar {...props} />
-        </Container>
+      
 
         <Container textAlign="center">
           <Header as="h1">About</Header>

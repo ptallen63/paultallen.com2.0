@@ -14,7 +14,7 @@
     width: 100vw;
     background-color: #2980b9 !important;
     background-image: url("https://s3-us-west-2.amazonaws.com/paultallen.com/PTA.com+Project+Hero.png") !important;
-    background-attachment: fixed !important;
+    background-attachment: local !important;
     background-position: center !important;
     background-repeat: no-repeat !important;
     background-size: cover !important;
@@ -44,6 +44,7 @@
     -webkit-box-shadow: 1px 5px 5px #ccc !important;
     -moz-box-shadow: 1px 5px 5px #ccc !important;
     box-shadow: 1px 5px 5px #ccc !important;
+    min-height: 400px;
 }
 
 .project:hover {
@@ -93,6 +94,3 @@
     padding: 2px !important;
     margin: 0 !important;
 }
-
-
-/* TODO: Make Project Cards stretch across the row */
