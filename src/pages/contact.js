@@ -84,7 +84,7 @@ export default class ContactForm extends React.Component {
           this.setState({
             loading: false,
             errors: {
-              server: "Yike!, Something went wrong. We are working on it. "
+              server: "Yike!, Something went wrong. We are working on it. In the mean time feel free to send you messages directly to ptallen63@gmai.com"
             }
           });
         });
