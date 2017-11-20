@@ -28,6 +28,8 @@ export default class ContactForm extends React.Component {
     };
   }
 
+  //TODO: Add Mailjet functions
+
   handleChange = e => {
     const { formData } = this.state;
 
@@ -111,7 +113,9 @@ export default class ContactForm extends React.Component {
               longer.
             </p>
 
-            <form noValidate onSubmit={this.handleSubmit} className={classnames(
+            <a href='mailto:ptallen63@gmail.com'><Button size='massge'> <Icon name='send'/>Send me an email</Button></a>
+
+            {/* <form noValidate onSubmit={this.handleSubmit} className={classnames(
                 "ui",
                 "form",
                 {
@@ -153,7 +157,7 @@ export default class ContactForm extends React.Component {
                       <li key={key}>{this.state.errors[key]}</li>
                     ))}
                   </ul>} error />
-            </form>
+            </form> */}
           </Segment>
         </Container>
       </div>;
