@@ -28,18 +28,17 @@ const TemplateWrapper = ({ children }) => (
           name: "keywords",
           content:
             "Paul Allen, Developer, Technologist, CRM, Salesforce, Higher Education"
+        },
+        {
+           name:"google-site-verification",
+          content:"UBDcYMiVGZ_KUA8M3P8S7EOTVrMRtEfIoYCDLw7WS0w",
         }
       ]}
     >
       <link rel="shortcut icon" href={favicon} />
+      
     </Helmet>
-    <div
-      style={{
-        
-      }}
-    >
-      {children()}
-    </div>
+    <div style={{}}>{children()}</div>
     <Footer />
   </div>
 );
