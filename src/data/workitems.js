@@ -1,9 +1,18 @@
 const workitems = [
   {
+    company: 'Red Ventures',
+    location: 'Fort Mill, SC',
+    position: 'Front End Developer',
+    timeSpan: 'February 2018 - Present',
+    bullets: [
+      'Work with technologies like ReactJS, VueJS, and other JS libraries to build front end solutions',
+    ]
+  },
+  {
     company: "University of South Carolina",
     location: "Columbia, SC",
     position: "Marketing Technologist",
-    timeSpan: "August 2016 - Present",
+    timeSpan: "August 2016 - February 2018",
     bullets: [
       "Overhauled the analytics infrastructure on all web properties using Google Tag Manager which led to increased flexibility in measurement and testing",
       "Launched the College Newsletter Program that provided strategies to colleges within the university to successfully launch their newsletters",
