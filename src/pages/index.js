@@ -17,7 +17,7 @@ const IndexPage = () => (
             </Statistic>
 
             <Header textAlign='center' className="keyWords" color="grey" as="h2">
-              Technologist, Developer, Consultant
+              Developer, Consultant, Technologist
             </Header>
 
             <a target="_blank" href="https://twitter.com/ptallen63">
