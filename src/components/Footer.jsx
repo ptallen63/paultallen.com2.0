@@ -21,7 +21,7 @@ const Footer = () => (
         <Link to="/projects">Projects</Link> | <Link to="/resume">Resume</Link>
       </p>
       <p>
-        Made with <Icon name="heart" /> by The Muller Avenue Group{" "}
+        Made with <Icon name="heart" /> by Paul Allen{" "}
       </p>
       <p>
         Check out this site on{" "}
