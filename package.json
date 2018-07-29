@@ -9,6 +9,7 @@
     "gatsby": "^1.9.110",
     "gatsby-link": "^1.6.27",
     "gatsby-plugin-google-tagmanager": "^1.0.8",
+    "gatsby-plugin-netlify": "^1.0.21",
     "gatsby-plugin-offline": "^1.0.10",
     "gatsby-plugin-react-helmet": "^1.0.8",
     "gatsby-plugin-sass": "^1.0.13",
@@ -38,7 +39,6 @@
     "predeploy": "git checkout master && git pull",
     "deploy": "git checkout production && git pull && git merge master && git push && git checkout master",
     "postdeploy": "echo \"Deployment complete!\""
-
   },
   "devDependencies": {
     "eslint": "^4.11.0",
