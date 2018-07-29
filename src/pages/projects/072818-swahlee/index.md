@@ -22,4 +22,4 @@ show: true
 
 ## Description
 
-Swahlee is a clothing company in India that makes dresses. They specifically provide employment for young girls who have been trafficked and need economic means to be prepared not to get swept back into that life. Swahlee needed a front facing website to tell their story and sell their dresses. They also needed a shop to handle the selling of dresses. The site is build in the JAM stack. Using ReactJS with the GatsbyJS static site generator.
+Swahlee is a clothing company in India that makes dresses. They specifically provide employment for young girls who have been trafficked and need economic means to be prepared not to get swept back into that life. Swahlee needed a front facing website to tell their story and sell their dresses. They also needed a shop to handle the selling of dresses. The site is built in the JAM stack. It uses ReactJS with the GatsbyJS static site generator.

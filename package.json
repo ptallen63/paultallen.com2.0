@@ -34,7 +34,11 @@
     "develop": "gatsby develop",
     "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"src/**/*.js\"",
     "test": "jest & eslint",
-    "start": "gatsby serve"
+    "start": "gatsby serve",
+    "predeploy": "git checkout master && git pull",
+    "deploy": "git checkout production && git pull && git merge master && git push && git checkout master",
+    "postdeploy": "echo \"Deployment complete!\""
+
   },
   "devDependencies": {
     "eslint": "^4.11.0",
