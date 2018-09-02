@@ -1,12 +1,40 @@
-import React from 'react';
+import React, { Component } from 'react';
 import Helmet from 'react-helmet';
 import Link from 'gatsby-link';
 import { Button, Icon, Grid, Image,Container, Header, Statistic } from 'semantic-ui-react';
+import Typed from 'typed.js';
 
 import '../styles/index.scss';
-const IndexPage = () => (
+class IndexPage extends Component {
+  componentDidMount() {
+    const strings = [
+      "<span class='black'>Engineer</span>",
+      "<span class='black'>Developer</span>",
+      "<span class='black'>Consultant</span>",
+      "<span class='black'>Cool Guy</span>",
+      "<span class='black'>Technologist</span>",
+      "<span class='black'>Lover of bacon</span>",
+      "<span class='black'>Email enthusiast</span>",
+      "<span class='black'>I have done a lot of cool things</span>",
+      "<a class='black' href='projects'>Check some of them out <span class='grey'>>></span></a>"
+    ]
+    const options = {
+      strings: strings,
+      typeSpeed: 30,
+      backSpeed: 20,
+      smartBackspace: true,
+    };
+    this.typed = new Typed(this.el, options);
+  }
+
+  componentWillUnmount() {
+    this.typed.destroy();
+  }
+
+  render() {
+  return (
   <div>
-   
+
     <Helmet title='Paultallen.com'/>
     <div className="mainContainer">
       <Container textAlign="center">
@@ -17,7 +45,10 @@ const IndexPage = () => (
             </Statistic>
 
             <Header textAlign='center' className="keyWords" color="grey" as="h2">
-              Developer, Consultant, Technologist
+                <span
+                  style={{ whiteSpace: 'pre', fontSize: '28px' }}
+                  ref={(el) => { this.el = el; }}
+                />
             </Header>
 
             <a target="_blank" href="https://twitter.com/ptallen63">
@@ -108,7 +139,8 @@ const IndexPage = () => (
     </div>
 
   </div>
-);
+)}
+};
 
 
 export default IndexPage

@@ -23,9 +23,6 @@
 }
 
 .front-page-icon {
-    padding: 5px !important;
-    border-bottom: 1px solid;
-    border-color: #fff !important;
     transition: border 400ms ease-in-out;
 
     &:before {
@@ -47,4 +44,17 @@
         visibility: visible;
         transform: scaleX(1);
     }
+}
+
+.black {
+    color: #000000;
+
+    a {
+        color: #000000 !important;
+
+    }
+}
+
+.grey {
+    color: grey;
 }
