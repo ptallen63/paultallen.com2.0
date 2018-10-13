@@ -22,13 +22,13 @@ var settings = {
 };
 
 export default function Template(props) {
-  const { markdownRemark: project } = props.data; 
+  const { markdownRemark: project } = props.data;
 
   const images = project.frontmatter.images.map( (image, i) => <div key={i}><Image className='screenshot' centered src={image}/></div>);
   const tags = project.frontmatter.tags.map((tag, i) => <Label tag size="mini" key={i}> {tag} </Label>);
 
   return <div>
-      <Helmet title={`${project.frontmatter.title} | GradeCalculate.com`} />
+      <Helmet title={`${project.frontmatter.title} | paultallen.com`} />
       <Navbar {...props} />
 
       <div className="hero-image">
