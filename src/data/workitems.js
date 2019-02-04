@@ -2,7 +2,7 @@ const workitems = [
   {
     company: 'Red Ventures',
     location: 'Fort Mill, SC',
-    position: 'Senior Frontend Developer',
+    position: 'Senior Front-End Engineer',
     timeSpan: 'September 2018 - Present',
     bullets: [
       'Lead a team  of developers using technologies like ReactJS, VueJS, and other JS libraries to build frontend solutions',
@@ -11,7 +11,7 @@ const workitems = [
   {
     company: 'Red Ventures',
     location: 'Fort Mill, SC',
-    position: 'Frontend Developer',
+    position: 'Front-End Engineer',
     timeSpan: 'February 2018 - September 2018',
     bullets: [
       'Work with technologies like ReactJS, VueJS, and other JS libraries to build front end solutions',
